@@ -1,0 +1,53 @@
+{
+  "name": "certio-server",
+  "version": "1.0.0",
+  "description": "Certificate Verification Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://publicrepo.aiti-kace.com.gh/aiti/certio.git"
+  },
+  "keywords": [
+    "Certificate",
+    "Verification",
+    "Service"
+  ],
+  "author": "fred achi <achifred123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.11"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ],
+    "ignore": [
+      "node_modules",
+      ".git",
+      "./.gitignore",
+      "./.vscode",
+      "./dist"
+    ]
+  }
+}
